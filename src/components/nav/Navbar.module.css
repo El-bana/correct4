@@ -1,0 +1,49 @@
+nav {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 18px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 34px;
+}
+
+.logo > span {
+  color: #61bdee;
+}
+
+.links {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  font-weight: 500;
+  width: 100%;
+}
+
+.links {
+  color: #585858;
+}
+
+.links .active {
+  color: #000000;
+}
+
+.sign_up {
+  width: 127px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #61bdee;
+}
+
+.sign_up > p {
+  line-height: 40px;
+}
