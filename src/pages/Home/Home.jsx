@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Home.module.css'
-import wave from '../assets/icons/waving-hand.svg';
-import playIcon from '../assets/images/google-play.png';
-import appleIcon from '../assets/images/app-store.png';
-import homeDecoration from '../assets/images/home.png';
+import wave from '../../assets/icons/waving-hand.svg';
+import playIcon from '../../assets/images/google-play.png';
+import appleIcon from '../../assets/images/app-store.png';
+import homeDecoration from '../../assets/images/home.png';
 
 function Home() {
   return (
