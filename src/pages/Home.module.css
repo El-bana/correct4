@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.home_header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.home_header img {
+  width: 45px;
+  height: 45px;
+}
+
+.home_header_text h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-right: 28px;
+  line-height: 1;
+}
+
+.home_header_text .logo {
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.home_header_text .logo > span {
+  color: #61bdee;
+}
+
+.home_description {
+  font-size: 18px;
+  max-width: 450px;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  line-height: 27px;
+}
+
+.home_logos a {
+  margin-right: 20px;
+}
