@@ -8,6 +8,7 @@ import Login from './pages/Forms/Login/Login';
 import Register from './pages/Forms/Register/Register';
 import { useLocation } from 'react-router-dom';
 import clsx from 'clsx'
+import Classes from './pages/Classes/Classes';
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <Route path='/about-us' element={<About />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/classes' element={<Classes />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,33 @@
+.card_grid {
+  column-gap: 20px;
+  row-gap: 32px;
+}
+
+.classes_main_paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 68px;
+  margin-bottom: 56px;
+}
+
+.classes_main_paragraph h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: lowercase;
+}
+
+.classes_main_paragraph h2 span {
+  color: #61bdee;
+}
+
+.classes_main_paragraph img {
+  width: 23px;
+  height: 23px;
+}
+
+.classes_card_container {
+  width: 100%;
+}
