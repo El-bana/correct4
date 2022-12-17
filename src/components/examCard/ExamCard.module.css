@@ -1,0 +1,17 @@
+.exam_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  min-height: 100px;
+  background: #61bdee;
+  border-radius: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .exam_card {
+    height: 75px;
+  }
+}
