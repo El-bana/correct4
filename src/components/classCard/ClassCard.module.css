@@ -1,0 +1,51 @@
+.card_main {
+  width: 100%;
+}
+
+.card_top {
+  background: #61bdee;
+  border-radius: 13px 13px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+
+.card_course_title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.triple_dots {
+  width: 4px;
+  height: 16px;
+}
+
+.card_bottom {
+  border: 1px solid #61bdee;
+  border-radius: 0px 0px 13px 13px;
+  padding: 18px 20px 24px 24px;
+  width: 100%;
+}
+
+.card_bottom p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #424242;
+  margin-bottom: 18px;
+}
+
+.excel_upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.excel_upload img {
+  height: 18px;
+  width: 12px;
+}
