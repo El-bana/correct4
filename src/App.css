@@ -28,7 +28,7 @@
   }
 }
 
-@ media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .main-grid {
     margin: 0 36px;
   }
