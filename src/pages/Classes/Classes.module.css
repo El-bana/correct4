@@ -31,3 +31,33 @@
 .classes_card_container {
   width: 100%;
 }
+
+/* Exam Styles */
+
+.exam_excel_upload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 75px;
+  border: 1px solid #61bdee;
+  border-radius: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #61bdee;
+  margin-bottom: 24px;
+}
+
+.start_button {
+  background: #61bdee;
+  border-radius: 13px;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 42px;
+}

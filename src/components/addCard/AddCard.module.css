@@ -1,0 +1,17 @@
+.add_card {
+  background: #61bdee;
+  border-radius: 13px;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 75px;
+}
+
+@media screen and (max-width: 576px) {
+  .add_card {
+    min-height: 140px;
+  }
+}
