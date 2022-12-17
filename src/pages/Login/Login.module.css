@@ -1,0 +1,15 @@
+.main_paragraph {
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+.main_paragraph span {
+  color: #61bdee;
+  font-weight: 600;
+}
+
+.login_form {
+  margin-top: 24px;
+}
