@@ -4,6 +4,7 @@ import styles from './Login.module.css'
 import * as Yup from 'yup';
 import { Formik, Form, Field } from 'formik';
 import loginImage from '../../assets/images/login.png'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const LoginSchema = Yup.object().shape({
@@ -43,7 +44,7 @@ const Login = () => {
             </Form>
           )}
         </Formik>
-        <p className='form-link'>Not A User? <span>Signup</span></p>
+        <p to='/register' className='form-link'>Not A User? <Link to='/register'>Signup</Link></p>
       </GridItem>
       <GridItem gridSize={6} className='form-image fullSizeGridTablet'>
         <img src={loginImage} alt='' className='img-fluid' />

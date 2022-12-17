@@ -11,7 +11,7 @@ function Navbar() {
         <a href="#"><p>About Us</p></a>
         <a href="#"><p>Classes</p></a>
       </div>
-      <a className={styles.sign_up} href="#"><p>Sign In</p></a>
+      <Link to='/login' className={styles.sign_up} href="#"><p>Sign In</p></Link>
     </nav>
   )
 }

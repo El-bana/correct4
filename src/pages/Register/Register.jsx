@@ -4,6 +4,7 @@ import styles from '../Login/Login.module.css'
 import * as Yup from 'yup';
 import { Formik, Form, Field } from 'formik';
 import loginImage from '../../assets/images/login.png'
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -65,7 +66,7 @@ const Register = () => {
             </Form>
           )}
         </Formik>
-        <p className='form-link'>Already A User? <span>Login</span></p>
+        <p className='form-link'>Already A User? <Link to='/login'>Login</Link></p>
       </GridItem>
       <GridItem gridSize={6} className='form-image fullSizeGridTablet'>
         <img src={loginImage} alt='' className='img-fluid' />
