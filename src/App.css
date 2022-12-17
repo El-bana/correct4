@@ -1,3 +1,9 @@
+.App {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .main-grid {
   margin: 0 100px;
 }
@@ -44,4 +50,24 @@
 
 .form-link span {
   color: #61bdee;
+}
+
+@media screen and (max-width: 750px) {
+  .fullSizeGridTablet {
+    grid-column: span 12 / 13 !important;
+  }
+  .halfSizeGridTablet {
+    grid-column: span 6 !important;
+  }
+
+  .form-image {
+    grid-row-start: 1;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fullSizeGridMobile {
+    grid-column: span 12 / 13 !important;
+  }
 }

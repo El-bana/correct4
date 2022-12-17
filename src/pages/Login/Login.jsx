@@ -16,7 +16,7 @@ const Login = () => {
 
   return (
     <GridContainer className='main-grid'>
-      <GridItem gridSize={5} className='login-left'>
+      <GridItem gridSize={5} className='login-left fullSizeGridTablet'>
         <h2 className={styles.main_paragraph}>Login To Your <br /> <span>Account</span></h2>
         <Formik
           initialValues={{
@@ -45,8 +45,8 @@ const Login = () => {
         </Formik>
         <p className='form-link'>Not A User? <span>Signup</span></p>
       </GridItem>
-      <GridItem gridSize={6} className='form-image'>
-        <img src={loginImage} alt='' />
+      <GridItem gridSize={6} className='form-image fullSizeGridTablet'>
+        <img src={loginImage} alt='' className='img-fluid' />
       </GridItem>
     </GridContainer>
   )

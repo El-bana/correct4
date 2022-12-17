@@ -2,7 +2,7 @@
 const GridItem = ({ children, gridSize, className }) => {
   return (
     <div style={{
-      gridColumn: `span ${gridSize}`
+      gridColumn: `span ${gridSize}`,
     }}
       className={className}
     >

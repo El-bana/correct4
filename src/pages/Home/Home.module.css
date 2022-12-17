@@ -3,7 +3,6 @@
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
   align-items: center;
-  margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }

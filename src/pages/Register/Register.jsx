@@ -23,8 +23,8 @@ const Register = () => {
 
   return (
     <GridContainer className='main-grid'>
-      <GridItem gridSize={5} className='login-left'>
-        <h2 className={styles.main_paragraph}>Register A New <br /> <span>Account</span></h2>
+      <GridItem gridSize={5} className='login-left fullSizeGridTablet'>
+        <h2 className={styles.main_paragraph}>Ready To <br /> <span>Join Us</span></h2>
         <Formik
           initialValues={{
             email: '',
@@ -67,8 +67,8 @@ const Register = () => {
         </Formik>
         <p className='form-link'>Already A User? <span>Login</span></p>
       </GridItem>
-      <GridItem gridSize={6} className='form-image'>
-        <img src={loginImage} alt='' />
+      <GridItem gridSize={6} className='form-image fullSizeGridTablet'>
+        <img src={loginImage} alt='' className='img-fluid' />
       </GridItem>
     </GridContainer>
   )
