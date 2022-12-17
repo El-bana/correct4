@@ -1,9 +1,9 @@
-import GridContainer from '../../components/grid/GridContainer'
-import GridItem from '../../components/grid/GridItem'
-import styles from './Login.module.css'
+import GridContainer from '../../../components/grid/GridContainer'
+import GridItem from '../../../components/grid/GridItem'
+import styles from '../Forms.module.css'
 import * as Yup from 'yup';
 import { Formik, Form, Field } from 'formik';
-import loginImage from '../../assets/images/login.png'
+import loginImage from '../../../assets/images/login.png'
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <GridContainer className='main-grid'>
-      <GridItem gridSize={5} className='login-left fullSizeGridTablet'>
+      <GridItem gridSize={5} className='fullSizeGridTablet'>
         <h2 className={styles.main_paragraph}>Login To Your <br /> <span>Account</span></h2>
         <Formik
           initialValues={{
@@ -33,20 +33,20 @@ const Login = () => {
           validateOnBlur={false}
         >
           {({ errors, touched }) => (
-            <Form className={styles.login_form}>
-              <Field name="email" type='email' placeholder='Email' className='main-input' />
+            <Form className={styles.form}>
+              <Field name="email" type='email' placeholder='Email' className={styles.main_input} />
               {errors.email && touched.email ? (
-                <div className='form-validation'>{errors.email}</div>
+                <div className={styles.form_validation}>{errors.email}</div>
               ) : null}
-              <Field name="password" type="password" placeholder='Password' className='main-input' />
-              {errors.password && touched.password ? <div className='form-validation'>{errors.password}</div> : null}
-              <button type="submit" className='form-button'>Login</button>
+              <Field name="password" type="password" placeholder='Password' className={styles.main_input} />
+              {errors.password && touched.password ? <div className={styles.form_validation}>{errors.password}</div> : null}
+              <button type="submit" className={styles.form_button}>Login</button>
             </Form>
           )}
         </Formik>
-        <p to='/register' className='form-link'>Not A User? <Link to='/register'>Signup</Link></p>
+        <p to='/register' className={styles.form_link}>Not A User? <Link to='/register'>Signup</Link></p>
       </GridItem>
-      <GridItem gridSize={6} className='form-image fullSizeGridTablet'>
+      <GridItem gridSize={6} className={`${styles.form_image} fullSizeGridTablet`}>
         <img src={loginImage} alt='' className='img-fluid' />
       </GridItem>
     </GridContainer>

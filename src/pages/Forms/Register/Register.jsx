@@ -1,9 +1,9 @@
-import GridContainer from '../../components/grid/GridContainer'
-import GridItem from '../../components/grid/GridItem'
-import styles from '../Login/Login.module.css'
+import GridContainer from '../../../components/grid/GridContainer'
+import GridItem from '../../../components/grid/GridItem'
+import styles from '../Forms.module.css'
 import * as Yup from 'yup';
 import { Formik, Form, Field } from 'formik';
-import loginImage from '../../assets/images/login.png'
+import loginImage from '../../../assets/images/login.png'
 import { Link } from 'react-router-dom';
 
 const Register = () => {
@@ -41,34 +41,34 @@ const Register = () => {
           validateOnBlur={false}
         >
           {({ errors, touched }) => (
-            <Form className={styles.login_form}>
-              <Field name="email" type='email' placeholder='Email' className='main-input' />
+            <Form className={styles.form}>
+              <Field name="email" type='email' placeholder='Email' className={styles.main_input} />
               {errors.email && touched.email ? (
-                <div className='form-validation'>{errors.email}</div>
+                <div className={styles.form_validation}>{errors.email}</div>
               ) : null}
-              <Field name="firstName" placeholder='First Name' className='main-input' />
+              <Field name="firstName" placeholder='First Name' className={styles.main_input} />
               {errors.firstName && touched.firstName ? (
-                <div className='form-validation'>{errors.firstName}</div>
+                <div className={styles.form_validation}>{errors.firstName}</div>
               ) : null}
-              <Field name="lastName" placeholder='Last Name' className='main-input' />
+              <Field name="lastName" placeholder='Last Name' className={styles.main_input} />
               {errors.lastName && touched.lastName ? (
-                <div className='form-validation'>{errors.lastName}</div>
+                <div className={styles.form_validation}>{errors.lastName}</div>
               ) : null}
-              <Field name="phone" type='tel' placeholder='Phone Number' className='main-input' />
+              <Field name="phone" type='tel' placeholder='Phone Number' className={styles.main_input} />
               {errors.phone && touched.phone ? (
-                <div className='form-validation'>{errors.phone}</div>
+                <div className={styles.form_validation}>{errors.phone}</div>
               ) : null}
-              <Field name="password" type="password" placeholder='Password' className='main-input' />
-              {errors.password && touched.password ? <div className='form-validation'>{errors.password}</div> : null}
-              <Field name="passwordConfirmation" type="password" placeholder='Confirm Password' className='main-input' />
-              {errors.passwordConfirmation && touched.passwordConfirmation ? <div className='form-validation'>{errors.passwordConfirmation}</div> : null}
-              <button type="submit" className='form-button'>SignUp</button>
+              <Field name="password" type="password" placeholder='Password' className={styles.main_input} />
+              {errors.password && touched.password ? <div className={styles.form_validation}>{errors.password}</div> : null}
+              <Field name="passwordConfirmation" type="password" placeholder='Confirm Password' className={styles.main_input} />
+              {errors.passwordConfirmation && touched.passwordConfirmation ? <div className={styles.form_validation}>{errors.passwordConfirmation}</div> : null}
+              <button type="submit" className={styles.form_button}>SignUp</button>
             </Form>
           )}
         </Formik>
-        <p className='form-link'>Already A User? <Link to='/login'>Login</Link></p>
+        <p className={styles.form_link}>Already A User? <Link to='/login'>Login</Link></p>
       </GridItem>
-      <GridItem gridSize={6} className='form-image fullSizeGridTablet'>
+      <GridItem gridSize={6} className={`${styles.form_image} fullSizeGridTablet`}>
         <img src={loginImage} alt='' className='img-fluid' />
       </GridItem>
     </GridContainer>
