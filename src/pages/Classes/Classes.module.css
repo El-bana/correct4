@@ -10,6 +10,7 @@
   width: 100%;
   margin-top: 68px;
   margin-bottom: 56px;
+  cursor: pointer;
 }
 
 .classes_main_paragraph h2 {
@@ -61,4 +62,6 @@
   justify-content: center;
   margin-bottom: 42px;
   margin-top: 42px;
+  cursor: pointer;
+  user-select: none;
 }

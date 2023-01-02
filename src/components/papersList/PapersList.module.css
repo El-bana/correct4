@@ -1,0 +1,33 @@
+.papers_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+}
+
+.paper_img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #61bdee;
+}
+
+.paper_score {
+  padding: 12px;
+  background-color: #61bdee;
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .paper {
+    width: 100%;
+  }
+}

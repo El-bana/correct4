@@ -1,11 +1,12 @@
-import styles from './ExamCard.module.css'
+import { Link } from "react-router-dom";
+import styles from "./ExamCard.module.css";
 
-const ExamCard = ({ exam = 'Mid Term' }) => {
+const ExamCard = ({ exam }) => {
   return (
-    <div className={styles.exam_card}>
-      {exam}
-    </div>
-  )
-}
+    <Link to={`/exams/${exam.id}`} className={styles.exam_card}>
+      {exam.name}
+    </Link>
+  );
+};
 
-export default ExamCard
+export default ExamCard;

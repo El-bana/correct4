@@ -1,0 +1,38 @@
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal_title {
+  font-size: 16px !important;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #424242;
+}
+
+.modal_input {
+  background: #ffffff;
+  border: 1px solid #61bdee;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  outline: none;
+}
+
+.modal_button {
+  background: #61bdee;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  height: 44px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 26px;
+  cursor: pointer;
+}
