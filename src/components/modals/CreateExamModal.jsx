@@ -14,7 +14,13 @@ const CreateExamModel = ({ show, handleClose, classDetails }) => {
   const handleCreateExam = () => {
     if (!examName) return;
 
-    dispatch(createUserExam({ name: examName, classId: classDetails.id }))
+    dispatch(
+      createUserExam({
+        name: examName,
+        classId: classDetails.id,
+        modelName: "model1",
+      })
+    )
       .unwrap()
       .then((res) => {
         console.log(res);

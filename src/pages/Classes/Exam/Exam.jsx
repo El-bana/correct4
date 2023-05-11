@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import {
   correctMCQPapers,
   fetchExamById,
+  generateCSV,
   setModelAnswer,
 } from "../../../features/exames";
 import { useParams } from "react-router-dom";
@@ -84,6 +85,22 @@ const Exam = () => {
       });
   };
 
+  const handleGenerateCSVReport = async () => {
+    dispatch(
+      generateCSV({
+        examId: exam.id,
+      })
+    )
+      .unwrap()
+      .then((response) => {
+        const url = window.URL.createObjectURL(new Blob([response]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "report.csv"); //or any other extension
+        document.body.appendChild(link);
+        link.click();
+      });
+  };
   return (
     <>
       <div className="main-grid">
@@ -107,7 +124,7 @@ const Exam = () => {
           >
             <AddCard
               onClick={() => modelAnswerInputRef?.current?.click()}
-              toUpload="Model Answer"
+              toUpload="Add Model Answer"
             />
             <input
               type="file"
@@ -128,7 +145,7 @@ const Exam = () => {
             >
               <AddCard
                 onClick={() => papersInputRef?.current?.click()}
-                toUpload="MCQ Papers"
+                toUpload="Add MCQ Papers"
               />
               <input
                 type="file"
@@ -141,6 +158,19 @@ const Exam = () => {
               />
             </GridItem>
           )}
+
+          <GridItem
+            gridSize="12"
+            className={clsx(
+              styles.classes_card_container,
+              "fullSizeGridMobile"
+            )}
+          >
+            <AddCard
+              onClick={handleGenerateCSVReport}
+              toUpload="Generate CSV Report"
+            />
+          </GridItem>
 
           <GridItem
             gridSize="12"

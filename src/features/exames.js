@@ -79,11 +79,29 @@ export const createUserExam = createAsyncThunk(
   "exames/createUserExam",
   async (payload, { rejectWithValue }) => {
     try {
-      const { name, classId } = payload;
+      const { name, classId, modelName } = payload;
 
       const response = await instance.post("/groups", {
         name,
         class_id: classId,
+        model_name: modelName,
+      });
+
+      return response.data;
+    } catch (e) {
+      return rejectWithValue(e);
+    }
+  }
+);
+
+export const generateCSV = createAsyncThunk(
+  "exames/generateCSV",
+  async (payload, { rejectWithValue }) => {
+    try {
+      const { examId } = payload;
+
+      const response = await instance.post(`/groups/${examId}/generateReport`, {
+        responseType: "blob",
       });
 
       return response.data;

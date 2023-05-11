@@ -24,6 +24,8 @@
   padding: 12px;
   background-color: #61bdee;
   border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 992px) {
